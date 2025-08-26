@@ -47,6 +47,12 @@ POST {server_url}:{port}/sent-otp
 POST {server_url}:{port}/verify-otp
 ```
 
+#### 3. Websocket url
+
+```
+{server_url}:{port}
+```
+
 ---
 
 ## 🛠️ Installation & Usage
