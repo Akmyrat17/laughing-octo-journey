@@ -16,9 +16,9 @@ export class AppController {
   @HttpCode(HttpStatus.OK)
   @Post('/verify-otp')
   async verifyOtp(
-    @Body('phone_number') phone_number: number,
-    @Body('otp') otp: number,
+    @Body('phone_number') phone_number: string,
+    @Body('otp') otp: string,
   ) {
-    return await this.appService.verifyOtp(phone_number, otp);
+    return await this.appService.verifyOtp(+phone_number, +otp);
   }
 }
